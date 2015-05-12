@@ -1,0 +1,84 @@
+.main-container {
+  padding-top: 70px;
+}
+
+.requiredlbl {
+  color: #a94442;
+}
+
+.warninglbl {
+  color: #cccc00;
+}
+
+/** main buttons **/
+
+.action-row {
+  padding:5px;
+}
+
+.main-btn {
+  min-width:75px;
+  margin-right: 10px;
+  margin-left:10px;
+}
+
+/** grid buttons **/
+
+.fa-button-action {
+  color: #BBBDBF;
+  margin: 0 2px;
+  cursor: pointer;
+  float: right;
+}
+
+.fa-button-action:hover {
+  color: #24AFE3;
+}
+
+.actionWrapper {
+  font-size: 23px;
+}
+
+.table-striped tr:hover .fa-button-action {
+  color: #24AFE3;
+}
+
+.table-striped tr:hover .deleteBtn{
+  color: #ed4038;
+}
+
+/** Row Alignment **/
+
+.vertical-align {
+  display: flex;
+  flex-direction: row;
+}
+
+.vertical-align > [class^="col-"],
+.vertical-align > [class*=" col-"] {
+  display: flex;
+  align-items: center;
+}
+
+/** Status Circles **/
+
+.fa-bullet-green {
+  color: #0c0;
+  text-shadow: 0 0 5px #0c0;
+}
+
+.fa-bullet-yellow {
+  color: #cc0;
+  text-shadow: 0 0 5px #cc0;
+}
+
+.fa-bullet-red {
+  color: #c00;
+  text-shadow: 0 0 5px #c00;
+}
+
+.fa-bullet-gray {
+  color: #818385;
+  text-shadow: 0 0 5px #818385;
+}
+

@@ -1,0 +1,46 @@
+
+  <div class="row">
+      <h4>Creatives</h4>
+  </div>
+  <div class="row vertical-align pull-right action-row">
+      <button class="btn btn-primary main-btn" >New</button>
+      <input class="form-control" placeholder="Search" />
+  </div>
+  <div class="row">
+    <table class="table table-striped table-condensed table-hover">
+      <tr>
+        <th>ID</th>
+        <th>Status</th>
+        <th>Name</th>
+        <th>Thumbnail</th>
+        <th>Type</th>
+        <th>Size</th>
+        <th>Created</th>
+        <th></th>
+      </tr>
+      <tr>
+        <td>{{ model.refId }}</td>
+        <td>status</td>
+        <td>
+          <a class="thumb">{{ model.name }}</a>
+        </td>
+        <td>
+          <img src="{{model.mediaUrl}}" width="50" height="50" />
+        </td>
+        <td>type</td>
+        <td>{{ model.width }}</td>
+        <td>{{ formatted-date model.created 'yyyy-mm-dd hh:mm:ss'}}</td>
+        <td>
+          <div class="actionWrapper">
+              <i class="fa fa-trash-o fa-button-action deleteBtn"></i>
+              <i class="fa fa-edit fa-button-action"></i>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="8" class="text-center">
+          <img src="{{model.mediaUrl}}" />
+        </td>
+      </tr>
+    </table>
+  </div>
